@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: StorePage(),
     );
@@ -28,7 +28,7 @@ class StorePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(25.0),
               child: Row(
-                children: [
+                children: const [
                   Text(
                     "Woman",
                     style: TextStyle(fontWeight: FontWeight.bold),
@@ -52,7 +52,7 @@ class StorePage extends StatelessWidget {
               ),
             ),
             Expanded(child: Image.asset("assets/bag.jpeg", fit: BoxFit.cover)),
-            SizedBox(
+            const SizedBox(
               height: 2,
             ),
             Expanded(
